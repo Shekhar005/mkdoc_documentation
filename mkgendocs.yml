@@ -1,0 +1,203 @@
+site_name: my documentation project
+
+
+# Repository
+repo_name: Mydoc
+repo: https://github.com/
+# Copyright
+copyright: stark
+
+#This specifies the autogeneration portion
+pages:
+  - page: "modules/automate_mkdocs.md"
+    source: "automate_mkdocs.py"
+    functions:
+      - add_val
+      - automate_mkdocs_from_docstring
+      - automate_nav_structure
+      - fix
+      - indent
+
+  - page: "modules/logdissect/core.md"
+    source: "logdissect/core.py"
+    classes:
+      - LogDissectCore
+
+  - page: "modules/logdissect/utils.md"
+    source: "logdissect/utils.py"
+    functions:
+      - convert_standard_datestamp
+      - convert_nodate_datestamp
+      - convert_iso_datestamp
+      - convert_webaccess_datestamp
+      - convert_unix_datestamp
+      - convert_now_datestamp
+      - get_utc_date
+      - get_local_tzone
+      - merge_logs
+
+  - page: "modules/logdissect/filters/rsource.md"
+    source: "logdissect/filters/rsource.py"
+    classes:
+      - FilterModule
+
+  - page: "modules/logdissect/filters/rprotocol.md"
+    source: "logdissect/filters/rprotocol.py"
+    classes:
+      - FilterModule
+
+  - page: "modules/logdissect/filters/rdhost.md"
+    source: "logdissect/filters/rdhost.py"
+    classes:
+      - FilterModule
+
+  - page: "modules/logdissect/filters/protocol.md"
+    source: "logdissect/filters/protocol.py"
+    classes:
+      - FilterModule
+
+  - page: "modules/logdissect/filters/range.md"
+    source: "logdissect/filters/range.py"
+    classes:
+      - FilterModule
+
+  - page: "modules/logdissect/filters/rprocess.md"
+    source: "logdissect/filters/rprocess.py"
+    classes:
+      - FilterModule
+
+  - page: "modules/logdissect/filters/rgrep.md"
+    source: "logdissect/filters/rgrep.py"
+    classes:
+      - FilterModule
+
+  - page: "modules/logdissect/filters/grep.md"
+    source: "logdissect/filters/grep.py"
+    classes:
+      - FilterModule
+
+  - page: "modules/logdissect/filters/type.md"
+    source: "logdissect/filters/type.py"
+    classes:
+      - FilterModule
+
+  - page: "modules/logdissect/filters/dhost.md"
+    source: "logdissect/filters/dhost.py"
+    classes:
+      - FilterModule
+
+  - page: "modules/logdissect/filters/rshost.md"
+    source: "logdissect/filters/rshost.py"
+    classes:
+      - FilterModule
+
+  - page: "modules/logdissect/filters/last.md"
+    source: "logdissect/filters/last.py"
+    classes:
+      - FilterModule
+
+  - page: "modules/logdissect/filters/process.md"
+    source: "logdissect/filters/process.py"
+    classes:
+      - FilterModule
+
+  - page: "modules/logdissect/filters/shost.md"
+    source: "logdissect/filters/shost.py"
+    classes:
+      - FilterModule
+
+  - page: "modules/logdissect/filters/source.md"
+    source: "logdissect/filters/source.py"
+    classes:
+      - FilterModule
+
+  - page: "modules/logdissect/filters/blank.md"
+    source: "logdissect/filters/blank.py"
+    classes:
+      - FilterModule
+
+  - page: "modules/logdissect/parsers/syslognohost.md"
+    source: "logdissect/parsers/syslognohost.py"
+    classes:
+      - ParseModule
+
+  - page: "modules/logdissect/parsers/emerge.md"
+    source: "logdissect/parsers/emerge.py"
+    classes:
+      - ParseModule
+
+  - page: "modules/logdissect/parsers/windowsrsyslog.md"
+    source: "logdissect/parsers/windowsrsyslog.py"
+    classes:
+      - ParseModule
+
+  - page: "modules/logdissect/parsers/webaccess.md"
+    source: "logdissect/parsers/webaccess.py"
+    classes:
+      - ParseModule
+
+  - page: "modules/logdissect/parsers/sojson.md"
+    source: "logdissect/parsers/sojson.py"
+    classes:
+      - ParseModule
+
+  - page: "modules/logdissect/parsers/type.md"
+    source: "logdissect/parsers/type.py"
+    classes:
+      - ParseModule
+
+  - page: "modules/logdissect/parsers/syslogiso.md"
+    source: "logdissect/parsers/syslogiso.py"
+    classes:
+      - ParseModule
+
+  - page: "modules/logdissect/parsers/ciscoios.md"
+    source: "logdissect/parsers/ciscoios.py"
+    classes:
+      - ParseModule
+
+  - page: "modules/logdissect/parsers/tcpdump.md"
+    source: "logdissect/parsers/tcpdump.py"
+    classes:
+      - ParseModule
+
+  - page: "modules/logdissect/parsers/syslog.md"
+    source: "logdissect/parsers/syslog.py"
+    classes:
+      - ParseModule
+
+  - page: "modules/logdissect/parsers/linejson.md"
+    source: "logdissect/parsers/linejson.py"
+    classes:
+      - ParseModule
+
+  - page: "modules/logdissect/parsers/blank.md"
+    source: "logdissect/parsers/blank.py"
+    classes:
+      - ParseModule
+
+  - page: "modules/logdissect/output/log.md"
+    source: "logdissect/output/log.py"
+    classes:
+      - OutputModule
+
+  - page: "modules/logdissect/output/sojson.md"
+    source: "logdissect/output/sojson.py"
+    classes:
+      - OutputModule
+
+  - page: "modules/logdissect/output/type.md"
+    source: "logdissect/output/type.py"
+    classes:
+      - OutputModule
+
+  - page: "modules/logdissect/output/linejson.md"
+    source: "logdissect/output/linejson.py"
+    classes:
+      - OutputModule
+
+  - page: "modules/logdissect/output/blank.md"
+    source: "logdissect/output/blank.py"
+    classes:
+      - OutputModule
+

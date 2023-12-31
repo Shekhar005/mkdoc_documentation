@@ -1,0 +1,14 @@
+https://pypi.org/project/mkgendocs/
+https://medium.com/@christianhettlage/creating-your-own-documentation-site-with-sphinx-6687391a5c92
+
+If you need to have sphinx-doc first in your PATH, run:
+  echo 'export PATH="/opt/homebrew/opt/sphinx-doc/bin:$PATH"' >> ~/.zshrc
+
+
+###
+1. put the project in the root of the file
+2. pip install mkgendocs gendocs
+3. run automate_mkdocks.py
+4. gendoc --config mkgendocs.yaml
+5. python -m pip install mkdocs-material
+6. serve mkdocs

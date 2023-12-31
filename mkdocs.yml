@@ -1,0 +1,69 @@
+site_name: Example site
+
+
+# Repository
+repo_name: Example
+repo_url: https://github.com/
+edit_uri: ""
+# Copyright
+copyright: stark
+
+docs_dir: "docs/sources"
+
+plugins:
+  - search
+
+theme:
+  name: 'material'
+  custom_dir: 'docs'
+  palette:
+    primary: 'white'
+  logo: 'logo.svg' #logo_full.svg'
+  favicon: 'assets/images/favicon.svg'
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - instant
+nav:
+  - Home: index.md
+  - modules:
+    - automate_mkdocs: modules/automate_mkdocs.md
+    - logdissect:
+      - core: modules/logdissect/core.md
+      - filters:
+        - blank: modules/logdissect/filters/blank.md
+        - dhost: modules/logdissect/filters/dhost.md
+        - grep: modules/logdissect/filters/grep.md
+        - last: modules/logdissect/filters/last.md
+        - process: modules/logdissect/filters/process.md
+        - protocol: modules/logdissect/filters/protocol.md
+        - range: modules/logdissect/filters/range.md
+        - rdhost: modules/logdissect/filters/rdhost.md
+        - rgrep: modules/logdissect/filters/rgrep.md
+        - rprocess: modules/logdissect/filters/rprocess.md
+        - rprotocol: modules/logdissect/filters/rprotocol.md
+        - rshost: modules/logdissect/filters/rshost.md
+        - rsource: modules/logdissect/filters/rsource.md
+        - shost: modules/logdissect/filters/shost.md
+        - source: modules/logdissect/filters/source.md
+        - type: modules/logdissect/filters/type.md
+      - output:
+        - blank: modules/logdissect/output/blank.md
+        - linejson: modules/logdissect/output/linejson.md
+        - log: modules/logdissect/output/log.md
+        - sojson: modules/logdissect/output/sojson.md
+        - type: modules/logdissect/output/type.md
+      - parsers:
+        - blank: modules/logdissect/parsers/blank.md
+        - ciscoios: modules/logdissect/parsers/ciscoios.md
+        - emerge: modules/logdissect/parsers/emerge.md
+        - linejson: modules/logdissect/parsers/linejson.md
+        - sojson: modules/logdissect/parsers/sojson.md
+        - syslog: modules/logdissect/parsers/syslog.md
+        - syslogiso: modules/logdissect/parsers/syslogiso.md
+        - syslognohost: modules/logdissect/parsers/syslognohost.md
+        - tcpdump: modules/logdissect/parsers/tcpdump.md
+        - type: modules/logdissect/parsers/type.md
+        - webaccess: modules/logdissect/parsers/webaccess.md
+        - windowsrsyslog: modules/logdissect/parsers/windowsrsyslog.md
+      - utils: modules/logdissect/utils.md
